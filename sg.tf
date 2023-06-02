@@ -1,5 +1,6 @@
 resource "aws_security_group" "allow_tls" {
-    name = "day2-security-group"     ingress {
+    name = "day2-security-group"     
+    ingress {
         from_port = 443
         to_port = 443
          protocol = "tcp"
